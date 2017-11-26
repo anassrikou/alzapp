@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    // Meta, title, CSS, favicons, etc.
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |     
+    title Login 
+    // Bootstrap
+    link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    // Font Awesome
+    link(href='bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    // NProgress
+    link(href='bower_components/nprogress/nprogress.css', rel='stylesheet')
+    // Animate.css
+    link(href='bower_components/animate.css/animate.min.css', rel='stylesheet')
+    // Custom Theme Style
+    link(href='/css/custom.min.css', rel='stylesheet')
+  body.login
+    div
+      a#signup.hiddenanchor
+      |         
+      a#signin.hiddenanchor
+      |         
+      .login_wrapper
+        .animate.form.login_form
+          section.login_content
+            form
+              h1 Login
+              |                         
+              div
+                input.form-control(type='text', placeholder='Username', required='')
+              |                         
+              div
+                input.form-control(type='password', placeholder='Password', required='')
+              |                         
+              div
+                a.btn.btn-default.submit(href='dashboard') Log in
+                |                             
+                a.reset_pass(href='#') Lost your password?
+              
+        

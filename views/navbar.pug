@@ -1,0 +1,42 @@
+.main_container
+  .col-md-3.left_col
+    .left_col.scroll-view
+      .navbar.nav_title(style='border: 0;')
+        a.site_title(href='index.html')
+          i.fa.fa-user
+          |  
+          span Alzapp
+      |             
+      .clearfix
+      br
+      // sidebar menu
+      #sidebar-menu.main_menu_side.hidden-print.main_menu
+        .menu_section
+          h3 Menu
+          |                 
+          ul.nav.side-menu
+            li
+              a(href='dashboard')
+                i.fa.fa-home
+                |  Home       
+            li
+              a(href='map')
+                i.fa.fa-map
+                |  Map                    
+      // /sidebar menu
+  // top navigation
+  .top_nav
+    .nav_menu
+      nav
+        .nav.toggle
+          a#menu_toggle
+            i.fa.fa-bars
+        |               
+        ul.nav.navbar-nav.navbar-right
+                              
+          li
+            a(href='/')
+              i.fa.fa-sign-out.pull-right
+              |  Log Out
+
+  // /top navigation
